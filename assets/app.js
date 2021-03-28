@@ -9,7 +9,7 @@ const fifteen = $('#fifteen').html();
 const sixteen = $('#sixteen').html();
 const seventeen = $('#seventeen').html();
 
-// console.log(fifteen)
+console.log(sixteen)
 
 // console.log(typeof fifteen);
 
@@ -21,16 +21,34 @@ function timeNow(){
 
 timeNow();
 
+
+
 // check if current time is equal to calendar time
 // Any grey area are in past, red is current, and green future time
 function checkTime(){
     // Check current time in hour format.
-    var currentTime = moment().format('h a');
-    // console.log(currentTime);
+    var currentTime = moment().format('k:mm');
+     console.log(currentTime);
+
+     // Test
+    //  let afterTime = '9:00';
+    //  console.log(afterTime);
 
     // console.log(typeof currentTime);
 
-    if(currentTime === nine){
+    if(currentTime >= '0:00' && currentTime < nine){
+        $('.des-9').css('background-color', 'green');
+        $('.des-10').css('background-color', 'green');
+        $('.des-11').css('background-color', 'green');
+        $('.des-12').css('background-color', 'green');
+        $('.des-13').css('background-color', 'green');
+        $('.des-14').css('background-color', 'green');
+        $('.des-15').css('background-color', 'green');
+        $('.des-16').css('background-color', 'green');
+        $('.des-17').css('background-color', 'green');
+    }
+
+    if(currentTime >= nine || currentTime < ten){
         $('.des-9').css('background-color', 'red');
         $('.des-10').css('background-color', 'green');
         $('.des-11').css('background-color', 'green');
@@ -42,7 +60,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'green');
     }
 
-    if(currentTime === ten){
+    if(currentTime >= ten && currentTime < eleven){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'red');
         $('.des-11').css('background-color', 'green');
@@ -54,7 +72,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'green');
     }
 
-    if(currentTime === eleven){
+    if(currentTime >= eleven && currentTime < twelve){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'red');
@@ -66,7 +84,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'green');
     }
    
-    if(currentTime === twelve){
+    if(currentTime >= twelve && currentTime < thirteen){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -78,7 +96,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'green');
     }
     
-    if(currentTime == thirteen){
+    if(currentTime >= thirteen && currentTime < fourteen){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -90,7 +108,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'green');
     }
    
-    if(currentTime === fourteen){
+    if(currentTime >= fourteen && currentTime < fifteen){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -102,7 +120,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'green');
     }
     
-    if(currentTime === fifteen){
+    if(currentTime >= fifteen && currentTime < sixteen){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -113,7 +131,7 @@ function checkTime(){
         $('.des-16').css('background-color', 'green');
         $('.des-17').css('background-color', 'green');
     }
-    if(currentTime === sixteen){
+    if(currentTime >= sixteen && currentTime < seventeen){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -124,7 +142,7 @@ function checkTime(){
         $('.des-16').css('background-color', 'red');
         $('.des-17').css('background-color', 'green');
     }
-    if(currentTime === seventeen){
+    if(currentTime >= seventeen && currentTime < '18:00'){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -136,7 +154,7 @@ function checkTime(){
         $('.des-17').css('background-color', 'red');
     }
 
-    if(currentTime > seventeen){
+    if(currentTime >= '18:00' && currentTime <= '23:59'){
         $('.des-9').css('background-color', 'grey');
         $('.des-10').css('background-color', 'grey');
         $('.des-11').css('background-color', 'grey');
@@ -219,5 +237,5 @@ $('#btn-clear').on('click', function(){
     $('.descr').val('');
    
     window.localStorage.clear();
-})
+});
 
