@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
+</head>
+<body>
+    <!-- Header tag holds title, description, and current time -->
+    <header>
+        <h1>Work Day Scheduler</h1>
+        <p>A simple calendar app for scheduling your work day</p>
+        <h3 id="time-container"><span id="current-time">00.00</span></h3>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Main section, contains the daily calendar -->
+    <main class="container">
+        <section class="calendar-container">
+            <p class="hour" id="nine">9 am</p>
+            <textarea class="des-9 descr"></textarea>
+            <button class="btn-save save-9"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="ten">10 am</p>
+            <textarea class="des-10 descr"></textarea>
+            <button class="btn-save save-10"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="eleven">11 am</p>
+            <textarea class="des-11 descr"></textarea>
+            <button class="btn-save save-11"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="twelve">12 pm</p>
+            <textarea class="des-12 descr"></textarea>
+            <button class="btn-save save-12"><i class="fa fa-save"></i></button>
+        </section class="calendar-container">
+        <section class="calendar-container">
+            <p class="hour" id="thirteen">1 pm</p>
+            <textarea class="des-13 descr"></textarea>
+            <button class="btn-save save-13"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="fourteen">2 pm</p>
+            <textarea class="des-14 descr"></textarea>
+            <button class="btn-save save-14"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="fifteen">3 pm</p>
+            <textarea class="des-15 descr"></textarea>
+            <button class="btn-save save-15"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="sixteen">4 pm</p>
+            <textarea class="des-16 descr"></textarea>
+            <button class="btn-save save-16"><i class="fa fa-save"></i></button>
+        </section>
+        <section class="calendar-container">
+            <p class="hour" id="seventeen">5 pm</p>
+            <textarea class="des-17 descr"></textarea>
+            <button class="btn-save save-17"><i class="fa fa-save"></i></button>
+        </section>
+    </main>
+    <!-- Main ends here -->
+
+    <!-- Clear button -->
+    <section class="btn-clr">
+        <button id="btn-clear">Clear</button>
+    </section>
+    <!-- Clear button ends here -->
+   
+    <script src="./assets/app.js"></script>
+</body>
+</html>

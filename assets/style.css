@@ -1,0 +1,183 @@
+/* Import Monserrat gont */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+/* Global setting */
+:root{
+    --bg-hd: #1099c7;
+    --color-hd: #ffffe2;
+    --bg-color: #ededed;
+    --btn-save: #1099c7;
+    --hour-col: #04061322;
+    --border-btm: #ff9900;
+}
+
+/* All settingh */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background color and font family */
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Header element */
+header {
+    background-color: var(--bg-hd);
+    color: var(--color-hd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    border-bottom: 10px solid var(--border-btm);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+/* Main page Time container */
+#time-container {
+    margin-bottom: 20px;
+}
+/* Main section element */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+/* Calendar container */
+.calendar-container {
+    display: flex;
+    justify-content: space-around;
+    outline: none;
+    margin-bottom: 2px;
+}
+
+/* time, textarea, and save button */
+.hour, .descr, .btn-save {
+    border: 1px solid black;
+    outline: none;
+    margin-right: 3px;
+}
+
+/* time area */
+.hour {
+    color: #333;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+/* text area  */
+.descr {
+    color: var(--color-hd);
+    font-size: 1.5rem;
+    flex: 10 1;
+    text-align: center;
+    resize: none;
+    padding:8px 10px;
+}
+/* text area in focus state */
+.descr:focus{
+    border-bottom: 2px solid var(--border-btm);
+}
+/* Save button */
+.btn-save {
+    background-color: var(--btn-save);
+    border-radius: 0px 15px 15px 0;
+    cursor: grab;
+    flex: 1 1;
+}
+/* Save button in hover state */
+.btn-save:hover{
+    background-color: #b6b2b2;
+}
+
+/* Clear button container */
+.btn-clr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Clear button */
+#btn-clear {
+    background-color: #000;
+    color: var(--color-hd);
+    cursor: grab;
+    font-size: 1.3rem;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+}
+/* clear button hover state */
+#btn-clear:hover{
+    background-color: #333;
+}
+
+/* media screen for 710px max width */
+@media screen and (max-width: 710px){
+    h1 {
+        font-size: 1.3rem;
+    }
+    p , h3{
+        font-size: 0.9rem;
+    }
+
+    .descr {
+        font-size:1.2rem;
+    }
+
+
+    #btn-clear {
+        font-size: 1rem;
+        padding: 8px 10px;
+        width: 20%;
+    }
+}
+
+/* media screen for 525px max width */
+@media screen and (max-width: 525px){
+    h1 {
+        font-size: 1.2rem;
+    }
+    p , h3{
+        font-size: 0.8rem;
+    }
+
+    .descr {
+        font-size:1.1rem;
+    }
+
+    #btn-clear {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+        width: 20%;
+    }
+}
+/* media screen for 425px max width */
+@media screen and (max-width:425px){
+    .calendar-container p {
+        font-size: 10px;
+    }
+
+    #btn-clear {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+        width: 20%;
+    }
+}
+/* media screen for max width of 393px */
+@media screen and (max-width: 393px){
+    p , h3{
+        font-size: 0.7rem;
+    } 
+}
