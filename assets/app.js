@@ -9,17 +9,18 @@ const fifteen = $('#fifteen').html();
 const sixteen = $('#sixteen').html();
 const seventeen = $('#seventeen').html();
 
-console.log(sixteen)
+// console.log(fifteen)
 
 // console.log(typeof fifteen);
 
 // Display current time
 function timeNow(){
-    let currentDateTime = moment().format('Do MMM, YYYY kk:mm');
+    let currentDateTime = moment().format('Do MMM, YYYY kk:mm:ss a');
     $('#current-time').text(currentDateTime);
 }
 
-timeNow();
+setInterval(timeNow, 1000);
+// timeNow();
 
 
 
@@ -36,7 +37,7 @@ function checkTime(){
 
     // console.log(typeof currentTime);
 
-    if(currentTime >= '0:00' && currentTime < nine){
+    if(currentTime < nine){
         $('.des-9').css('background-color', 'green');
         $('.des-10').css('background-color', 'green');
         $('.des-11').css('background-color', 'green');
@@ -61,7 +62,7 @@ function checkTime(){
     }
 
     if(currentTime >= ten && currentTime < eleven){
-        $('.des-9').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-10').css('background-color', 'red');
         $('.des-11').css('background-color', 'green');
         $('.des-12').css('background-color', 'green');
@@ -73,8 +74,8 @@ function checkTime(){
     }
 
     if(currentTime >= eleven && currentTime < twelve){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-11').css('background-color', 'red');
         $('.des-12').css('background-color', 'green');
         $('.des-13').css('background-color', 'green');
@@ -85,9 +86,9 @@ function checkTime(){
     }
    
     if(currentTime >= twelve && currentTime < thirteen){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-12').css('background-color', 'red');
         $('.des-13').css('background-color', 'green');
         $('.des-14').css('background-color', 'green');
@@ -97,10 +98,10 @@ function checkTime(){
     }
     
     if(currentTime >= thirteen && currentTime < fourteen){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
-        $('.des-12').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-12').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-13').css('background-color', 'red');
         $('.des-14').css('background-color', 'green');
         $('.des-15').css('background-color', 'green');
@@ -109,11 +110,11 @@ function checkTime(){
     }
    
     if(currentTime >= fourteen && currentTime < fifteen){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
-        $('.des-12').css('background-color', 'grey');
-        $('.des-13').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-12').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-13').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-14').css('background-color', 'red');
         $('.des-15').css('background-color', 'green');
         $('.des-16').css('background-color', 'green');
@@ -121,49 +122,49 @@ function checkTime(){
     }
     
     if(currentTime >= fifteen && currentTime < sixteen){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
-        $('.des-12').css('background-color', 'grey');
-        $('.des-13').css('background-color', 'grey');
-        $('.des-14').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-12').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-13').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-14').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-15').css('background-color', 'red');
         $('.des-16').css('background-color', 'green');
         $('.des-17').css('background-color', 'green');
     }
     if(currentTime >= sixteen && currentTime < seventeen){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
-        $('.des-12').css('background-color', 'grey');
-        $('.des-13').css('background-color', 'grey');
-        $('.des-14').css('background-color', 'grey');
-        $('.des-15').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-12').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-13').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-14').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-15').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-16').css('background-color', 'red');
         $('.des-17').css('background-color', 'green');
     }
     if(currentTime >= seventeen && currentTime < '18:00'){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
-        $('.des-12').css('background-color', 'grey');
-        $('.des-13').css('background-color', 'grey');
-        $('.des-14').css('background-color', 'grey');
-        $('.des-15').css('background-color', 'grey');
-        $('.des-16').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-12').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-13').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-14').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-15').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-16').css({'background-color': 'grey', 'pointer-events': 'none'});
         $('.des-17').css('background-color', 'red');
     }
 
     if(currentTime >= '18:00' && currentTime <= '23:59'){
-        $('.des-9').css('background-color', 'grey');
-        $('.des-10').css('background-color', 'grey');
-        $('.des-11').css('background-color', 'grey');
-        $('.des-12').css('background-color', 'grey');
-        $('.des-13').css('background-color', 'grey');
-        $('.des-14').css('background-color', 'grey');
-        $('.des-15').css('background-color', 'grey');
-        $('.des-16').css('background-color', 'grey');
-        $('.des-17').css('background-color', 'grey');
+        $('.des-9').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-10').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-11').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-12').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-13').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-14').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-15').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-16').css({'background-color': 'grey', 'pointer-events': 'none'});
+        $('.des-17').css({'background-color': 'grey', 'pointer-events': 'none'});
     }
 }
 
