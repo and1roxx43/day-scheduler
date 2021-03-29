@@ -8,6 +8,7 @@ Scrolling down the page, user is oresented with timeblocks. Each timeblock is co
 Timeblock in the past will be in grey, timeblock in current time will be red, and timeblock in the future will be green.
 User should be able to enter text in the timeblock and save with a save button located on the right of the text area.
 When the page is refresh, the text should remain.
+Once the time block has passed (grey), text will be only readonly.
 There's also a clear button to clear the text area and local storage.
 ___
 ## The acceptance criteria
