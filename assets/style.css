@@ -10,6 +10,7 @@
     --btn-save: #1099c7;
     --hour-col: #04061322;
     --border-btm: #ff9900;
+    --hour-bg: #062935; 
 }
 
 /* All settingh */
@@ -67,7 +68,8 @@ header {
 
 /* time area */
 .hour {
-    color: #333;
+    background-color: var(--hour-bg);
+    color: var(--color-hd);
     width: 10%;
     display: flex;
     justify-content: center;

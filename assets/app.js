@@ -17,19 +17,21 @@ const seventeen = $('#seventeen').html();
 function timeNow(){
     let currentDateTime = moment().format('Do MMM, YYYY kk:mm:ss a');
     $('#current-time').text(currentDateTime);
+
+    checkTime()
 }
 
-setInterval(timeNow, 1000);
-// timeNow();
+setInterval(timeNow,1000);
 
 
+timeNow();
 
 // check if current time is equal to calendar time
 // Any grey area are in past, red is current, and green future time
 function checkTime(){
     // Check current time in hour format.
     var currentTime = moment().format('k:mm');
-     console.log(currentTime);
+     //console.log(currentTime);
 
      // Test
     //  let afterTime = '9:00';
@@ -168,7 +170,7 @@ function checkTime(){
     }
 }
 
-checkTime();
+
 
 
 // save comments to calendar
