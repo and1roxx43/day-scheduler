@@ -2,14 +2,14 @@
 ___
 ## Overview
 ___
-Part of this project is to build a simple Work Day Scheduler where the user is able to enter details.
+Part of this project is to build a simple Work Day Scheduler where a user is able to enter their daily work activity.
 When the scheduler is launch, the current time and day is displayed in the header. 
-Scrolling down the page, user is oresented with timeblocks. Each timeblock is color coded. 
-Timeblock in the past will be in grey, timeblock in current time will be red, and timeblock in the future will be green.
-User should be able to enter text in the timeblock and save with a save button located on the right of the text area.
-When the page is refresh, the text should remain.
-Once the time block has passed (grey), text will be only readonly.
-There's also a clear button to clear the text area and local storage.
+Scrolling down the page, user is presented with timeblocks from 9 am - 5 pm. Each timeblock is color coded based on the time.
+Timeblocks in the past will be in grey, timeblock in current time will be red, and timeblocks in the future will be green.
+User should be able to enter text in the timeblock and save their entry with a save button located on the right hasnd side of the text area.
+When the page is refresh, the text entered should remain.
+Once a time block has passed (grey), text will be in readonly.
+There's also a clear button to clear the text area and the local storage.
 ___
 ## The acceptance criteria
 ___
