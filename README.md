@@ -32,3 +32,17 @@ ___
 
 ### Images
 ![image](https://user-images.githubusercontent.com/14179472/112781016-c7b53300-9095-11eb-8f7b-097c9035aa37.png)
+
+___
+
+URL:
+___
+Github
+
+- https://github.com/and1roxx43/day-scheduler
+
+___
+
+Webpage URL
+
+- https://and1roxx43.github.io/day-scheduler/
